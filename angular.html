@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Example</title>
+    
+    <!-- AngularJS Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- Your custom JavaScript file -->
+    <script src="1.js"></script>
+    <style>
+        body{
+            width:400px;
+            height:100px;
+            border-radius: 20px;
+            border: 2px solid red;
+            padding-top: 20px;
+            
+        }
+#t1{
+    border-radius: 10px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid red;
+}
+button{
+    border-radius: 10px;
+    height: 25px;
+    background-color:red;
+    color: white;
+}
+label{
+    margin-left: 20px;
+}
+table{
+    margin-left: 20px;
+}
+    </style>
+</head>
+<body ng-controller="MyController">
+    <label>Enter Task Name:</label>
+    <input type="text" ng-model="taskname" id="t1">
+    <button ng-click="add()">ADD</button>
+
+    <table border="1" style="margin-top: 10px;">
+        <tr ng-repeat="x in arr">
+            <td ng-repeat="(key, value) in x">{{value}}</td>
+            <td><button ng-click="del($index)">Delete</button></td>
+            <td><button ng-click="edit($index)">Edit</button></td>
+        </tr>
+    </table>
+</body>
+</html>
