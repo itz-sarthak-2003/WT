@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="3.css">
+  <link rel="" href="./bootstrap.min.css">
+  <style>
+    .nav1 {
+            
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      text-shadow: rgb(0, 0, 0);
+
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      text-align: right;
+      text-shadow: cornflowerblue;
+      font-family: 'Times New Roman', Times, serif;
+
+    }
+    
+    hr {
+      color: black;
+    }
+
+    .h1 {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .self {
+      display: flex;
+      flex-direction: row;
+      background-color: aliceblue;
+
+    }
+
+    .img {
+      display: flex;
+      flex-direction: row;
+      height: 300px;
+      width: 300px;
+      float: left;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <script src="./bootstrap.bundle.min.js"></script>
+  <h1 class="h1">Welcome to My Portfolio</h1>
+  <hr>
+
+  <div class="div1">
+    <nav class="nav1">
+      <a class="anchor" href="WWW.com">&nbsp;Home&nbsp;</a>
+      <a class="anchor" href="WWW.com">&nbsp;Education&nbsp;</a>
+      <a class="anchor" href="WWW.com">&nbsp;About&nbsp;</a>
+    </nav>
+    </div>
+  <section id="self">
+        <div class="text-center">
+        <img src="img.jpg" height="300px" width="300px">
+      </div>
+    </div>
+    <div class="intro">
+      <h1>ABC</h1>
+      <h3>Web Developer</h1>
+        <a href="https://github.com/Dmk4711"><img src="./github.jpeg" alt="GitHub" height="20px"></a>
+        <a href="https://www.linkedin.com/in/ABC-494a4a256"><img src="./linkedin" alt="LinkedIn" height="20px"></a>
+
+    </div>
+  </section>
+
+  <div>
+    <h4>Education</h4>
+    <table border="">
+      <caption>Education</caption>
+      <thead>
+        <tr>
+          <th>Institute Name</th>
+          <th>Grade</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SCOE</td>
+          <td>A</td>
+          <td>FY</td>
+        </tr>
+        <tr>
+          <td>SCOE</td>
+          <td>A+</td>
+          <td>SY</td>
+        </tr>
+        <tr>
+          <td>SCOE</td>
+          <td>A</td>
+          <td>TY</td>
+        </tr>
+      </tbody>
+    </table>
+    <ol>
+      <h2>Skills</h2>
+      <li>Html5</li>
+      <li>Pyhton</li>
+      <li>C++</li>
+    </ol>
+    <ol>
+      <h2>Certifications</h2>
+      <li>Object Oriented Programming</li>
+      <li>MePro Pearson</li>
+    </ol>
+
+    <section>
+      <caption>
+        <h1>Feedback Form</h1>
+      </caption>
+      <form action="Response.php">
+        <label for="name">Name&nbsp;&nbsp;</label>
+        <input type="text" id="name"><br><br>
+
+        <label for="email">Email&nbsp;&nbsp;</label>
+        <input type="email" id="name">
+
+        <h2>&nbsp;&nbsp;Where Did you hear about us</h2>
+        <input type="radio" name="name" checked>Social Media<input type="radio" name="name">Website<input type="radio"
+          name="name">News
+
+        <h3>What you liked most about our Website</h3>
+        <label for="domain">Your choice:</label>
+        <select name="domain" id="domain">
+          <option value="Select">Select</option>
+          <option value="title">Title</option>
+          <option value="navbar">Navbar</option>
+          <option value="Certifications">Certifications</option>
+        </select><br><br>
+        <caption>Which domain would you like to choose</caption><br>
+        <input type="checkbox" name="domain">AIML<br>
+        <input type="checkbox" name="domain">Data Science<br>
+        <input type="checkbox" name="domain">Cyber Security<br>
+        <input type="checkbox" name="domain">IOT<br>
+
+        <label for="textarea">Any suggestions:</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br>
+        <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Submit</button>
+      </form>
+    </section>
+
+    <audio src="aud.mp3" controls autoplay muted loop></audio><br><br>
+    <video src="vid.mp4" height="300" width="500" controls autoplay muted loop></video>
+  </div>
+
+</body>
+</html>
